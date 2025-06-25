@@ -1,17 +1,34 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import {  Geist_Mono, Sevillana } from "next/font/google";
+// import { Ubuntu_Mono} from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
 import QueryProvider from "./QueryProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+//   const sevillana = Sevillana({
+//     variable: "--font-ubuntu",
+//     subsets :["latin"],
+//     weight : ['400'],
+
+//   });
+
+  export const spidermanFont = localFont({
+  src: '../../public/fonts/Spiderman.ttf', // starts with slash for `public/`
+  variable: '--font-spiderman',
+  // display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,11 +43,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            className={`${spidermanFont.className} antialiased` } >
         <QueryProvider>
         {children}
         </QueryProvider>
+
       </body>
     </html>
   );
