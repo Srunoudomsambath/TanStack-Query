@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 // import { Ubuntu_Mono} from "next/font/google";
 import "./globals.css";
 import QueryProvider from "./QueryProvider";
-import { spidermanFont } from "@/lib/font";
+// import { spidermanFont } from "@/lib/font";
+import localFont from "next/font/local";
 
 
 // const geistSans = Geist({
@@ -23,11 +24,11 @@ import { spidermanFont } from "@/lib/font";
 
 //   });
   //the error because of export you can remove export and it's okay
-  // export const spidermanFont = localFont({
-  // src: '../../public/fonts/Spiderman.ttf', // starts with slash for `public/`
-  // variable: '--font-spiderman',
-  // display: 'swap',
-// });
+  export const spidermanFont = localFont({
+  src: '../../public/fonts/Spiderman.ttf', // starts with slash for `public/`
+  variable: '--font-spiderman',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
