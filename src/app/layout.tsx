@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   description: 'This is a Next.js app with amazing features',
   keywords: ['Next.js', 'React', 'TanStack', 'App Router'],
   authors: [{ name: 'Your Name', url: 'https://osc.com.fj/wp-content/uploads/2024/05/Unveiling-Modern-Trends-in-Technology.jpeg' }],
-  creator: 'Your Name',
+  creator: 'Srun Oudomsambath',
   openGraph: {
     title: 'My Cool App',
     description: 'Best app ever built with Next.js',
