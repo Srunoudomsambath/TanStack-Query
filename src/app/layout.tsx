@@ -22,7 +22,7 @@ import { spidermanFont } from "@/lib/font";
 //     weight : ['400'],
 
 //   });
-
+  //the error because of export you can remove export and it's okay
   // export const spidermanFont = localFont({
   // src: '../../public/fonts/Spiderman.ttf', // starts with slash for `public/`
   // variable: '--font-spiderman',

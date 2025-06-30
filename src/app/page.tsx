@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div 
     >
-     <h1 className="text-[150px]">Srun Oudomsambath</h1>
+     <h1 className="text-[150px]">Srun Oudomsambath * Roith</h1>
       <h2 className="text-3xl font-ubuntu">Lorem ipsum dolor sit amet. </h2>
       <Image 
      src ="/images/hahah.jpg"
