@@ -24,7 +24,7 @@ import localFont from "next/font/local";
 
 //   });
   //the error because of export you can remove export and it's okay
-  export const spidermanFont = localFont({
+  const spidermanFont = localFont({
   src: '../../public/fonts/Spiderman.ttf', // starts with slash for `public/`
   variable: '--font-spiderman',
   display: 'swap',
