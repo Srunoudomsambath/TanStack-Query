@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 // import {  Geist_Mono, Sevillana } from "next/font/google";
 // import { Ubuntu_Mono} from "next/font/google";
-import localFont from 'next/font/local';
 import "./globals.css";
 import QueryProvider from "./QueryProvider";
+import { spidermanFont } from "@/lib/font";
 
 
 // const geistSans = Geist({
@@ -23,12 +23,11 @@ import QueryProvider from "./QueryProvider";
 
 //   });
 
-  export const spidermanFont = localFont({
-  src: '../../public/fonts/Spiderman.ttf', // starts with slash for `public/`
-  variable: '--font-spiderman',
+  // export const spidermanFont = localFont({
+  // src: '../../public/fonts/Spiderman.ttf', // starts with slash for `public/`
+  // variable: '--font-spiderman',
   // display: 'swap',
-});
-
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
